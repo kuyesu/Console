@@ -1,7 +1,7 @@
 {
   "name": "Console - AI chatbot framework",
   "description": "A python chatbot framework with Natural Language Understanding and Artificial Intelligence.",
-  "logo": "https://raw.githubusercontent.com/alfredfrancis/ai-chatbot-framework/master/app/static/images/iky.png",
+  "logo": "",
   "image": "heroku/python",
   "repository": "https://github.com/kuyesu/Console",
   "keywords": ["python", "flask","spacy","scikit-learn"],
