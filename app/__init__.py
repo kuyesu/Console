@@ -2,11 +2,12 @@ import os
 from flask import Flask, send_from_directory
 from flask_cors import CORS
 from flask_mongoengine import MongoEngine
+from flask_migrate import Migrate
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__ + "../../"))
 
 db = MongoEngine()
-
+migrate = Migrate()
 spacy_tokenizer = None
 
 
@@ -21,6 +22,7 @@ def create_app(env="Development"):
 
     app.config.from_object("config.%s" % env)
     db.init_app(app)
+    migrate.init_app(app, db)
 
     import spacy
 

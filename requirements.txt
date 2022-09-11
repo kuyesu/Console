@@ -1,5 +1,6 @@
 attrs
 beautifulsoup4
+black
 blis
 bs4
 catalogue
@@ -13,7 +14,7 @@ spacy
 Flask
 Flask-Cors
 flask-mongoengine
-Flask-Script
+# Flask-Script
 Flask-WTF
 gevent
 greenlet
